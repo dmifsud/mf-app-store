@@ -1,0 +1,1 @@
+{"version":3,"file":"store.counter.d.ts","sourceRoot":"","sources":["../../../src/counter/store.counter.ts"],"names":[],"mappings":"AAEA,MAAM,WAAW,YAAY;IACzB,KAAK,EAAE,MAAM,CAAC;IACd,GAAG,EAAE,CAAC,MAAM,CAAC,EAAE,MAAM,KAAK,IAAI,CAAC;CAClC;AAED,QAAA,MAAM,QAAQ,2EAGX,CAAC;AAEJ,eAAe,QAAQ,CAAC"}
