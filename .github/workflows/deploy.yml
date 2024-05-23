@@ -3,7 +3,7 @@ name: Deploy Store to GH Pages
 on:
     push:
         branches:
-            - gh-pages
+            - staging
 
 jobs:
     build:
