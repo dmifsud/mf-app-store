@@ -41,6 +41,7 @@ export default defineConfig({
     },
   },
   build: {
+    assetsDir: 'mf-app-store/assets',
     target: "esnext",
     minify: false,
     cssCodeSplit: false,
