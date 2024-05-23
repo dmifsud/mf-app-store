@@ -5,7 +5,7 @@ const exportSet = new Set(['Module', '__esModule', 'default', '_export_sfc']);
       return __federation_import('./__federation_expose_Index-B4RnjhqN.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},
 "./counter/store.counter":()=>{
       dynamicLoadingCss([], false, './counter/store.counter');
-      return __federation_import('./__federation_expose_CounterStoreCounter-C837xior.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},};
+      return __federation_import('./__federation_expose_CounterStoreCounter-BYWJymvm.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},};
     const seen = {};
     const dynamicLoadingCss = (cssFilePaths, dontAppendStylesToHead, exposeItemName) => {
       const metaUrl = import.meta.url;

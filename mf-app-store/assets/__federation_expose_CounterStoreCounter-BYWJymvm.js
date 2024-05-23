@@ -4,7 +4,7 @@ const {create} = await importShared('zustand');
 
 const useStore = create((set) => ({
   count: 1,
-  inc: (amount) => set((state) => ({ count: state.count + (amount ?? 2) }))
+  inc: (amount) => set((state) => ({ count: state.count + (amount ?? 1) }))
 }));
 
 export { useStore as default };
