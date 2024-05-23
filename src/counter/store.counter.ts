@@ -7,7 +7,7 @@ export interface CounterStore {
 
 const useStore = create<CounterStore>((set) => ({
     count: 1,
-    inc: (amount?: number) => set((state) => ({ count: state.count + (amount ?? 2) })),
+    inc: (amount?: number) => set((state) => ({ count: state.count + (amount ?? 1) })),
 }));
 
 export default useStore;
