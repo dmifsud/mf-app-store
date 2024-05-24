@@ -2,10 +2,22 @@ const exportSet = new Set(['Module', '__esModule', 'default', '_export_sfc']);
       let moduleMap = {
 "./index":()=>{
       dynamicLoadingCss([], false, './index');
-      return __federation_import('./__federation_expose_Index-B4RnjhqN.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},
+      return __federation_import('./__federation_expose_Index-TOwdx_5g.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},
+"./structure":()=>{
+      dynamicLoadingCss([], false, './structure');
+      return __federation_import('./__federation_expose_Structure-l0sNRNKZ.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},
+"./auth/store.auth":()=>{
+      dynamicLoadingCss([], false, './auth/store.auth');
+      return __federation_import('./__federation_expose_AuthStoreAuth-DVpJdhZD.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},
+"./auth/store.profile":()=>{
+      dynamicLoadingCss([], false, './auth/store.profile');
+      return __federation_import('./__federation_expose_AuthStoreProfile-C1GXyWBe.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},
 "./counter/store.counter":()=>{
       dynamicLoadingCss([], false, './counter/store.counter');
-      return __federation_import('./__federation_expose_CounterStoreCounter-BYWJymvm.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},};
+      return __federation_import('./__federation_expose_CounterStoreCounter-D5CXEEHZ.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},
+"./models/auth.models":()=>{
+      dynamicLoadingCss([], false, './models/auth.models');
+      return __federation_import('./__federation_expose_ModelsAuthModels-l0sNRNKZ.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},};
     const seen = {};
     const dynamicLoadingCss = (cssFilePaths, dontAppendStylesToHead, exposeItemName) => {
       const metaUrl = import.meta.url;

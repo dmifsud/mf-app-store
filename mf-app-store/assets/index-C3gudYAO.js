@@ -1,4 +1,4 @@
-import './__federation_expose_Index-B4RnjhqN.js';
+import './__federation_expose_Index-TOwdx_5g.js';
 
 true&&(function polyfill() {
     const relList = document.createElement('link').relList;
