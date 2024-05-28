@@ -1,7 +1,7 @@
 import { importShared } from './__federation_fn_import-BSSw6lBa.js';
-import useStore$1 from './__federation_expose_AuthStoreProfile-CULZcOP5.js';
+import useStore$1 from './__federation_expose_AuthStoreProfile-Cyevw1lt.js';
 import { d as devtools, p as persist } from './middleware-DYnLWasL.js';
-import { devtoolsConfig } from './__federation_expose_UtilsStoreUtils-DkzKWXJg.js';
+import { devtoolsConfig } from './__federation_expose_UtilsStoreUtils-q4PR1uo3.js';
 
 const {create} = await importShared('zustand');
 const initialState = {

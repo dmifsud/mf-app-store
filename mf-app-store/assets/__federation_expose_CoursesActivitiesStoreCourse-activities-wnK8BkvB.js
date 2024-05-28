@@ -1,7 +1,7 @@
 import { importShared } from './__federation_fn_import-BSSw6lBa.js';
 import { courseData } from './__federation_expose_ApiCourse-dataMockApi-DTno13Ww.js';
 import { d as devtools } from './middleware-DYnLWasL.js';
-import { devtoolsConfig } from './__federation_expose_UtilsStoreUtils-DkzKWXJg.js';
+import { devtoolsConfig } from './__federation_expose_UtilsStoreUtils-q4PR1uo3.js';
 
 const {create} = await importShared('zustand');
 const initialState = {
