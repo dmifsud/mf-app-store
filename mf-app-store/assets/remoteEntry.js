@@ -2,19 +2,22 @@ const exportSet = new Set(['Module', '__esModule', 'default', '_export_sfc']);
       let moduleMap = {
 "./index":()=>{
       dynamicLoadingCss([], false, './index');
-      return __federation_import('./__federation_expose_Index-f8DtznnG.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},
+      return __federation_import('./__federation_expose_Index-NCjNk36p.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},
 "./structure":()=>{
       dynamicLoadingCss([], false, './structure');
       return __federation_import('./__federation_expose_Structure-l0sNRNKZ.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},
+"./vite-env.d":()=>{
+      dynamicLoadingCss([], false, './vite-env.d');
+      return __federation_import('./__federation_expose_Vite-envD-l0sNRNKZ.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},
 "./api/course-data.mock.api":()=>{
       dynamicLoadingCss([], false, './api/course-data.mock.api');
       return __federation_import('./__federation_expose_ApiCourse-dataMockApi-DTno13Ww.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},
 "./auth/store.auth":()=>{
       dynamicLoadingCss([], false, './auth/store.auth');
-      return __federation_import('./__federation_expose_AuthStoreAuth-YJzWmT1g.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},
+      return __federation_import('./__federation_expose_AuthStoreAuth-DP0Rp0mt.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},
 "./auth/store.profile":()=>{
       dynamicLoadingCss([], false, './auth/store.profile');
-      return __federation_import('./__federation_expose_AuthStoreProfile-C1GXyWBe.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},
+      return __federation_import('./__federation_expose_AuthStoreProfile-CULZcOP5.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},
 "./counter/store.counter":()=>{
       dynamicLoadingCss([], false, './counter/store.counter');
       return __federation_import('./__federation_expose_CounterStoreCounter-D5CXEEHZ.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},
@@ -24,12 +27,15 @@ const exportSet = new Set(['Module', '__esModule', 'default', '_export_sfc']);
 "./models/courses.models":()=>{
       dynamicLoadingCss([], false, './models/courses.models');
       return __federation_import('./__federation_expose_ModelsCoursesModels-l0sNRNKZ.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},
+"./utils/store.utils":()=>{
+      dynamicLoadingCss([], false, './utils/store.utils');
+      return __federation_import('./__federation_expose_UtilsStoreUtils-DkzKWXJg.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},
 "./websockets/store.ws":()=>{
       dynamicLoadingCss([], false, './websockets/store.ws');
       return __federation_import('./__federation_expose_WebsocketsStoreWs-svI2T3nx.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},
 "./courses/activities/store.course-activities":()=>{
       dynamicLoadingCss([], false, './courses/activities/store.course-activities');
-      return __federation_import('./__federation_expose_CoursesActivitiesStoreCourse-activities-CupT9zWP.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},};
+      return __federation_import('./__federation_expose_CoursesActivitiesStoreCourse-activities-DALXpAhC.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},};
     const seen = {};
     const dynamicLoadingCss = (cssFilePaths, dontAppendStylesToHead, exposeItemName) => {
       const metaUrl = import.meta.url;
