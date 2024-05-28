@@ -1,5 +1,7 @@
 import { create } from "zustand";
 import { StateSlice } from "../structure";
+import { devtools } from "zustand/middleware";
+import { devtoolsConfig } from "../utils/store.utils";
 
 
 export interface ProfileStore {
@@ -18,14 +20,18 @@ const initialState: ProfileStore = {
     email: null,
 };
 
-const useStore = create<StateSlice<ProfileStore, ProfileStoreActions>>((set) => ({
-    ...initialState,
-    actions: {
-        update: (name: string, surname: string, email: string) => {
-            console.log('update', name, surname, email);
-            set({ name, surname, email });
-        },
-    },
-}));
+const useStore = create<StateSlice<ProfileStore, ProfileStoreActions>>()(
+    devtools(
+        (set) => ({
+            ...initialState,
+            actions: {
+                update: (name: string, surname: string, email: string) => {
+                    console.log('update', name, surname, email);
+                    set({ name, surname, email }, false, 'PROFILE_UPDATE');
+                },
+            },
+        }), devtoolsConfig("ProfileStore")
+    )
+);
 
 export default useStore;

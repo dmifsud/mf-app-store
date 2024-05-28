@@ -9,7 +9,7 @@
     "lint": "tslint -c tslint.json src/**/*.ts",
     "prepublish": "npm run build",
     "preview": "vite preview",
-    "serve": "npm run build && vite preview"
+    "serve": "vite build --mode=local-prod && tsc && vite preview --mode=local-prod"
   },
   "author": "",
   "license": "ISC",
