@@ -7,9 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "vite build && tsc",
     "lint": "tslint -c tslint.json src/**/*.ts",
-    "prepublish": "npm run build",
     "preview": "vite preview",
-    "serve": "vite build --mode=local-prod && tsc && vite preview --mode=local-prod"
+    "serve": "vite build --mode=local-prod && tsc && vite preview --host --mode=local-prod"
   },
   "author": "",
   "license": "ISC",
