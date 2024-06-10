@@ -1,7 +1,7 @@
 # Shared State Project
 FROM node:22
 
-WORKDIR /app
+WORKDIR /usr/src/app
 
 COPY package*.json ./
 RUN npm install
