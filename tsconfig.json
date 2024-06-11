@@ -21,6 +21,8 @@
 	  "emitDeclarationOnly": true,
 	  "resolveJsonModule": true,
 	  "isolatedModules": true,
+	  "jsx": "preserve",
+	  "jsxImportSource": "solid-js",
   
 	  /* Linting */
 	  "strict": true,

@@ -1,6 +1,7 @@
 import { defineConfig } from "vite";
 import federation from "@originjs/vite-plugin-federation";
 import tsconfigPaths from "vite-tsconfig-paths";
+import solidPlugin from 'vite-plugin-solid';
 import fg from "fast-glob";
 
 const entryPoints = ["./src/**/*.ts", "./src/**/*.tsx"];
@@ -11,6 +12,7 @@ const filesToExpose = Object.fromEntries(
   files.map((filePath) => [
     filePath
       .replace("./src/", "./")
+      .replace(".tsx", "")
       .replace(".ts", ""),
     filePath,
   ])
@@ -24,6 +26,7 @@ export default ({ mode }: { mode: string }) => {
 
   return defineConfig({
     plugins: [
+      solidPlugin(),
       federation({
         name: "shared_state_app",
         filename: "remoteEntry.js",
@@ -31,7 +34,7 @@ export default ({ mode }: { mode: string }) => {
           ...filesToExpose,
           // add any custom entries here
         },
-        shared: ["zustand"],
+        shared: ["solid-js"],
       }),
       tsconfigPaths(),
     ],

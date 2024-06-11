@@ -1,7 +1,8 @@
-import { create } from "zustand";
-import { StateSlice } from "../structure";
-import { devtools } from "zustand/middleware";
-import { devtoolsConfig } from "../utils/store.utils";
+// import { create } from "zustand";
+import { createMutable } from 'solid-js/store';
+// import { StateSlice } from "../structure";
+// import { devtools } from "zustand/middleware";
+// import { devtoolsConfig } from "../utils/store.utils";
 
 
 export interface ProfileStore {
@@ -20,18 +21,36 @@ const initialState: ProfileStore = {
     email: null,
 };
 
-const useStore = create<StateSlice<ProfileStore, ProfileStoreActions>>()(
-    devtools(
-        (set) => ({
-            ...initialState,
-            actions: {
-                update: (name: string, surname: string, email: string) => {
-                    console.log('update', name, surname, email);
-                    set({ name, surname, email }, false, 'PROFILE_UPDATE');
-                },
-            },
-        }), devtoolsConfig("ProfileStore")
-    )
-);
 
-export default useStore;
+// SOLID IMPLEMENTATION
+const profileState = createMutable<ProfileStore & ProfileStoreActions>({
+    ...initialState,
+    update(name: string, surname: string, email: string) {
+        console.log('update', name, surname, email);
+        this.name = name;
+        this.surname = surname;
+        this.email = email;
+    },
+});
+
+export default profileState;
+
+
+
+
+// ZUSTAND IMPLEMENTATION
+// const useStore = create<StateSlice<ProfileStore, ProfileStoreActions>>()(
+//     devtools(
+//         (set) => ({
+//             ...initialState,
+//             actions: {
+//                 update: (name: string, surname: string, email: string) => {
+//                     console.log('update', name, surname, email);
+//                     set({ name, surname, email }, false, 'PROFILE_UPDATE');
+//                 },
+//             },
+//         }), devtoolsConfig("ProfileStore")
+//     )
+// );
+
+// export default useStore;
