@@ -27,6 +27,9 @@ const exportSet = new Set(['Module', '__esModule', 'default', '_export_sfc']);
 "./models/courses.models":()=>{
       dynamicLoadingCss([], false, './models/courses.models');
       return __federation_import('./__federation_expose_ModelsCoursesModels-l0sNRNKZ.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},
+"./models/enums":()=>{
+      dynamicLoadingCss([], false, './models/enums');
+      return __federation_import('./__federation_expose_ModelsEnums-l0sNRNKZ.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},
 "./utils/store.utils":()=>{
       dynamicLoadingCss([], false, './utils/store.utils');
       return __federation_import('./__federation_expose_UtilsStoreUtils-q4PR1uo3.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},
